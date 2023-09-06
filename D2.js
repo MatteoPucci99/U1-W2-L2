@@ -3,25 +3,34 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const integers = [10, 20];
+const x1 = 7;
+const x2 = 5;
 
-if (integers[0] > integers[1]) {
-  console.log("Il numero maggiore è ", integers[0]);
+if (x1 > x2) {
+  console.log("Il numero più grande è", x1);
+} else if (x1 < x2) {
+  console.log("Il numero più grande è ", x2);
 } else {
-  console.log("Il numero maggiore è ", integers[1]);
+  console.log("I due numeri sono uguali");
 }
+
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const number = 3;
+const x3 = 7;
 
-if (number === 5) {
-  console.log("Equal");
+if (x3 !== 5) {
+  console.log("not equal");
+}
+// oppure incluedendo il caso in cui sia uguale
+
+if (x3 === 5) {
+  console.log("equal");
 } else {
-  console.log("Not equal");
+  console.log("not equal");
 }
 
 /* ESERCIZIO 3
@@ -29,12 +38,11 @@ if (number === 5) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const multipleNumber = 10;
 
-if (multipleNumber % 5 === 0) {
+const x4 = 10;
+
+if (x4 % 5 === 0) {
   console.log("Divisibile per 5");
-} else {
-  console.log("Impara la matematica");
 }
 
 /* ESERCIZIO 4
@@ -42,14 +50,11 @@ if (multipleNumber % 5 === 0) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const sumIntegers = [12, 4];
 
-if (sumIntegers[0] === 8 || sumIntegers[1] === 8) {
-  console.log(true);
-} else if (
-  sumIntegers[0] + sumIntegers[1] === 8 ||
-  sumIntegers[0] - sumIntegers[1] === 8
-) {
+const y1 = 12;
+const y2 = 4;
+
+if (y1 === 8 || y2 === 8 || y1 + y2 === 8 || y1 - y2 === 8) {
   console.log(true);
 } else {
   console.log(false);
@@ -62,14 +67,14 @@ if (sumIntegers[0] === 8 || sumIntegers[1] === 8) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-// const totalShoppingCart = 40;
-// const shippingCost = 10;
 
-// if (totalShoppingCart > 50) {
-// console.log("Totale carrello: ", totalShoppingCart);
-// } else {
-// console.log("Totale carrello: ", totalShoppingCart + shippingCost);
-// }
+const totalShoppingCart = 45;
+
+if (totalShoppingCart > 50) {
+  console.log("Totale del carrello: ", totalShoppingCart);
+} else {
+  console.log("Totale del carrello :", totalShoppingCart + 10);
+}
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
@@ -77,14 +82,13 @@ if (sumIntegers[0] === 8 || sumIntegers[1] === 8) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const totalShoppingCart = 40;
-const shippingCost = 10;
-const blackFriday = 0.8;
 
-if (totalShoppingCart * blackFriday > 50) {
-  console.log("Totale carrello: ", totalShoppingCart * 0.8);
+const totalShoppingCart2 = 65;
+
+if (totalShoppingCart2 * 0.8 > 50) {
+  console.log("Totale del carrello: ", totalShoppingCart2 * 0.8);
 } else {
-  console.log("Totale carrello: ", 42);
+  console.log("Totale del carrello ", totalShoppingCart2 * 0.8 + 10);
 }
 
 /* ESERCIZIO 7
@@ -94,14 +98,23 @@ if (totalShoppingCart * blackFriday > 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const num1 = 3;
-const num2 = 5;
-const num3 = 7;
 
-if (num3 > num2 || num3 > num1 || num2 > 1) {
-  console.log(7, 5, 3);
+const z1 = 3;
+const z2 = 2;
+const z3 = 5;
+
+if (z3 > z2 && z2 > z1) {
+  console.log(z3, z2, z1);
+} else if (z1 > z2 && z2 > z3) {
+  console.log(z1, z2, z3);
+} else if (z2 > z1 && z1 > z3) {
+  console.log(z2, z1, z3);
+} else if (z1 > z3 && z3 > z2) {
+  console.log(z1, z3, z2);
+} else if (z2 > z3 && z3 > z1) {
+  console.log(z2, z3, z1);
 } else {
-  console.log(undefined);
+  console.log(z3, z1, z2);
 }
 
 /* ESERCIZIO 8
@@ -110,8 +123,13 @@ if (num3 > num2 || num3 > num1 || num2 > 1) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const value = 12;
-console.log(typeof value);
+const typeNumber = 19;
+
+if (typeof typeNumber === "number") {
+  console.log(true);
+} else {
+  console.log(false);
+}
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
@@ -119,12 +137,12 @@ console.log(typeof value);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const typeNumber = 5;
+const x5 = 12;
 
-if (typeNumber % 2 === 0) {
-  console.log("Numero pari");
+if (x5 % 2 === 0) {
+  console.log("Pari");
 } else {
-  console.log("Numero dispari");
+  console.log("Dispari");
 }
 
 /* ESERCIZIO 10
@@ -140,11 +158,11 @@ if (typeNumber % 2 === 0) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let val = 10;
+let val = 7;
 if (val < 5) {
   console.log("Meno di 5");
 } else if (val < 10) {
-  console.log("Meno di 10 ");
+  console.log("Meno di 10");
 } else {
   console.log("Uguale a 10 o maggiore");
 }
@@ -162,36 +180,35 @@ const me = {
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 me.city = "Toronto";
-// console.log(me); //per verificare
+console.log(me);
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
 delete me.lastName;
-// console.log(me);
+console.log(me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
 me.skills.pop();
+console.log(me.skills);
+// oppure
+// me.skills.splice(2, 1);
 // console.log(me.skills);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-const listOfNumber = [];
-
-listOfNumber.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-// console.log(listOfNumber);
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const numbers = [];
+numbers.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
@@ -199,5 +216,9 @@ listOfNumber.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-listOfNumber.pop();
-listOfNumber.push(100);
+numbers.pop();
+numbers.push(100);
+console.log(numbers);
+
+// oppure
+// numbers.splice(9,1) al posto di numbers.pop
